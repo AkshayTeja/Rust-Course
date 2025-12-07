@@ -127,55 +127,13 @@
     </style>
   </head>
   <body class="bg-gray-50">
-    <!-- Navigation -->
-    <nav class="bg-white shadow-sm sticky top-0 z-50 animate-fadeIn">
-      <div class="max-w-7xl mx-auto px-6 py-4">
-        <div class="flex items-center justify-between">
-          <div class="flex items-center space-x-2">
-            <div
-              class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center"
-            >
-              <span class="text-white font-bold text-lg">FB</span>
-            </div>
-            <span class="text-xl font-bold text-gray-800">FastBitEmbedded</span>
-          </div>
-          <div class="hidden md:flex items-center space-x-8">
-            <a href="#" class="text-gray-600 hover:text-blue-600 transition"
-              >Courses</a
-            >
-            <a href="#" class="text-gray-600 hover:text-blue-600 transition"
-              >About</a
-            >
-            <a href="#" class="text-gray-600 hover:text-blue-600 transition"
-              >Reviews</a
-            >
-            <a href="#" class="text-gray-600 hover:text-blue-600 transition"
-              >Demo</a
-            >
-            <a href="#" class="text-gray-600 hover:text-blue-600 transition"
-              >Contact</a
-            >
-          </div>
-          <div class="flex items-center space-x-4">
-            <button class="text-gray-600 hover:text-blue-600 transition">
-              Sign In
-            </button>
-            <button
-              class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition btn-hover"
-            >
-              Get Started
-            </button>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Back to Courses -->
-    <div class="bg-white border-b">
-      <div class="max-w-7xl mx-auto px-6 py-3">
+    <!-- Hero Section -->
+    <section class="hero-section py-16">
+      <div class="max-w-7xl mx-auto px-6">
+        <!-- Back to Courses Button -->
         <a
           href="#"
-          class="text-blue-600 hover:text-blue-700 flex items-center text-sm"
+          class="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition mb-8 font-medium btn-hover"
         >
           <svg
             class="w-4 h-4 mr-2"
@@ -192,12 +150,6 @@
           </svg>
           Back to Courses
         </a>
-      </div>
-    </div>
-
-    <!-- Hero Section -->
-    <section class="hero-section py-16">
-      <div class="max-w-7xl mx-auto px-6">
         <div class="grid md:grid-cols-2 gap-12 items-center">
           <div class="text-white">
             <span class="badge bg-blue-600 text-white mb-4"
@@ -377,443 +329,274 @@
       <div class="max-w-7xl mx-auto px-6">
         <div class="grid md:grid-cols-3 gap-8">
           <!-- Main Content -->
-          <div class="md:col-span-2">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6">
+          <div class="md:col-span-3">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">
               Course Overview
             </h2>
-            <p class="text-gray-700 leading-relaxed mb-6">
-              Learn Rust(Latest Edition) programming step by step with hands-on
-              exercises, from basics to advanced levels.
+            <div class="w-20 h-1 bg-blue-600 mb-6"></div>
+
+            <p class="text-gray-600 text-lg leading-relaxed mb-8">
+              Learn Rust (Latest Edition) programming step by step with hands-on
+              exercises, from basics to advanced levels. Master memory safety,
+              concurrency, and build high-performance applications.
             </p>
 
-            <h3 class="text-2xl font-bold text-gray-900 mb-4 mt-8">
+            <h3 class="text-3xl font-bold text-gray-900 mb-6 mt-12">
               What You'll Learn
             </h3>
-            <ul class="space-y-3">
-              <li class="flex items-start">
-                <svg
-                  class="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
+
+            <div class="grid md:grid-cols-2 gap-4">
+              <div class="flex items-start">
+                <div
+                  class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-                <span class="text-gray-700"
+                  <svg
+                    class="w-4 h-4 text-green-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2.5"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                </div>
+                <span class="text-gray-700 text-base"
                   >Fundamental concepts of Rust programming language</span
                 >
-              </li>
-
-              <li class="flex items-start">
-                <svg
-                  class="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-                <span class="text-gray-700">Ownership and borrowing rules</span>
-              </li>
-
-              <li class="flex items-start">
-                <svg
-                  class="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-                <span class="text-gray-700">References</span>
-              </li>
-
-              <li class="flex items-start">
-                <svg
-                  class="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-                <span class="text-gray-700">String and String slice</span>
-              </li>
-
-              <li class="flex items-start">
-                <svg
-                  class="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-                <span class="text-gray-700"
-                  >Rust's package manager and build system (Cargo)</span
-                >
-              </li>
-
-              <li class="flex items-start">
-                <svg
-                  class="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-                <span class="text-gray-700">Structures and Enums</span>
-              </li>
-
-              <li class="flex items-start">
-                <svg
-                  class="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-                <span class="text-gray-700">Unit testing in Rust</span>
-              </li>
-
-              <li class="flex items-start">
-                <svg
-                  class="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-                <span class="text-gray-700">Lifetimes</span>
-              </li>
-
-              <li class="flex items-start">
-                <svg
-                  class="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-                <span class="text-gray-700">Error Handling</span>
-              </li>
-
-              <li class="flex items-start">
-                <svg
-                  class="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-                <span class="text-gray-700">Pattern matching</span>
-              </li>
-
-              <li class="flex items-start">
-                <svg
-                  class="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-                <span class="text-gray-700">Loops and decision making</span>
-              </li>
-
-              <li class="flex items-start">
-                <svg
-                  class="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-                <span class="text-gray-700"
-                  >More is yet to come (Generics, traits, trait objects, smart
-                  pointers, closures, iterators and more)</span
-                >
-              </li>
-            </ul>
-
-            <h3 class="text-2xl font-bold text-gray-900 mb-4 mt-8">
-              Course Curriculum
-            </h3>
-            <div class="space-y-4">
-              <details class="bg-gray-50 rounded-lg">
-                <summary
-                  class="cursor-pointer p-4 font-semibold text-gray-900 hover:bg-gray-100 rounded-lg transition"
-                >
-                  Module 1: Introduction to Embedded Systems (Week 1)
-                </summary>
-                <div class="p-4 pt-0 text-gray-700 space-y-2">
-                  <p class="text-sm">• What are embedded systems?</p>
-                  <p class="text-sm">
-                    • Microcontroller vs Microprocessor architecture
-                  </p>
-                  <p class="text-sm">• STM32 family overview</p>
-                  <p class="text-sm">• Development environment setup</p>
-                  <p class="text-sm">• Your first embedded program</p>
-                </div>
-              </details>
-
-              <details class="bg-gray-50 rounded-lg">
-                <summary
-                  class="cursor-pointer p-4 font-semibold text-gray-900 hover:bg-gray-100 rounded-lg transition"
-                >
-                  Module 2: GPIO and Digital I/O (Week 2-3)
-                </summary>
-                <div class="p-4 pt-0 text-gray-700 space-y-2">
-                  <p class="text-sm">• Understanding GPIO registers</p>
-                  <p class="text-sm">• LED control and button interfacing</p>
-                  <p class="text-sm">• Pull-up/pull-down configurations</p>
-                  <p class="text-sm">• Bit manipulation techniques</p>
-                  <p class="text-sm">• Project: Traffic light controller</p>
-                </div>
-              </details>
-
-              <details class="bg-gray-50 rounded-lg">
-                <summary
-                  class="cursor-pointer p-4 font-semibold text-gray-900 hover:bg-gray-100 rounded-lg transition"
-                >
-                  Module 3: Interrupts and Timers (Week 4)
-                </summary>
-                <div class="p-4 pt-0 text-gray-700 space-y-2">
-                  <p class="text-sm">• Interrupt concept and NVIC</p>
-                  <p class="text-sm">• External interrupts (EXTI)</p>
-                  <p class="text-sm">• Timer peripherals and modes</p>
-                  <p class="text-sm">• PWM generation</p>
-                  <p class="text-sm">• Project: Digital clock</p>
-                </div>
-              </details>
-
-              <details class="bg-gray-50 rounded-lg">
-                <summary
-                  class="cursor-pointer p-4 font-semibold text-gray-900 hover:bg-gray-100 rounded-lg transition"
-                >
-                  Module 4: UART Communication (Week 5)
-                </summary>
-                <div class="p-4 pt-0 text-gray-700 space-y-2">
-                  <p class="text-sm">• Serial communication fundamentals</p>
-                  <p class="text-sm">• UART protocol deep dive</p>
-                  <p class="text-sm">• Transmit and receive operations</p>
-                  <p class="text-sm">• Interrupt-based UART</p>
-                  <p class="text-sm">• Project: Serial terminal interface</p>
-                </div>
-              </details>
-
-              <details class="bg-gray-50 rounded-lg">
-                <summary
-                  class="cursor-pointer p-4 font-semibold text-gray-900 hover:bg-gray-100 rounded-lg transition"
-                >
-                  Module 5: SPI and I2C Communication (Week 6-7)
-                </summary>
-                <div class="p-4 pt-0 text-gray-700 space-y-2">
-                  <p class="text-sm">• SPI protocol and configuration</p>
-                  <p class="text-sm">• I2C protocol and addressing</p>
-                  <p class="text-sm">• Interfacing sensors and displays</p>
-                  <p class="text-sm">• Multi-master communication</p>
-                  <p class="text-sm">
-                    • Project: Temperature monitoring system
-                  </p>
-                </div>
-              </details>
-
-              <details class="bg-gray-50 rounded-lg">
-                <summary
-                  class="cursor-pointer p-4 font-semibold text-gray-900 hover:bg-gray-100 rounded-lg transition"
-                >
-                  Module 6: Final Project (Week 8)
-                </summary>
-                <div class="p-4 pt-0 text-gray-700 space-y-2">
-                  <p class="text-sm">
-                    • Design your own embedded system project
-                  </p>
-                  <p class="text-sm">• Integration of all learned concepts</p>
-                  <p class="text-sm">• Code optimization techniques</p>
-                  <p class="text-sm">• Professional debugging practices</p>
-                  <p class="text-sm">• Project presentation and review</p>
-                </div>
-              </details>
-            </div>
-          </div>
-
-          <!-- Sidebar -->
-          <div class="md:col-span-1">
-            <div class="bg-white rounded-2xl shadow-lg p-6 sticky top-24">
-              <h3 class="text-xl font-bold text-gray-900 mb-4">
-                Course Details
-              </h3>
-              <div class="space-y-4">
-                <div class="flex items-start">
-                  <svg
-                    class="w-5 h-5 text-blue-600 mr-3 mt-0.5 flex-shrink-0"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
-                    ></path>
-                  </svg>
-                  <div>
-                    <div class="font-semibold text-gray-900">Certificate</div>
-                    <div class="text-gray-600 text-sm">Industry-recognized</div>
-                  </div>
-                </div>
-
-                <div class="flex items-start">
-                  <svg
-                    class="w-5 h-5 text-blue-600 mr-3 mt-0.5 flex-shrink-0"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
-                    ></path>
-                  </svg>
-                  <div>
-                    <div class="font-semibold text-gray-900">Students</div>
-                    <div class="text-gray-600 text-sm">1,250 enrolled</div>
-                  </div>
-                </div>
-
-                <div class="flex items-start">
-                  <svg
-                    class="w-5 h-5 text-blue-600 mr-3 mt-0.5 flex-shrink-0"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                    ></path>
-                  </svg>
-                  <div>
-                    <div class="font-semibold text-gray-900">Level</div>
-                    <div class="text-gray-600 text-sm">
-                      Beginner to Intermediate
-                    </div>
-                  </div>
-                </div>
-
-                <div class="flex items-start">
-                  <svg
-                    class="w-5 h-5 text-blue-600 mr-3 mt-0.5 flex-shrink-0"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"
-                    ></path>
-                  </svg>
-                  <div>
-                    <div class="font-semibold text-gray-900">Language</div>
-                    <div class="text-gray-600 text-sm">English</div>
-                  </div>
-                </div>
               </div>
 
-              <div class="mt-6 pt-6 border-t">
-                <h4 class="font-semibold text-gray-900 mb-3">
-                  Hardware Required
-                </h4>
-                <p class="text-sm text-gray-600 mb-2">
-                  • STM32F4 Discovery board
-                </p>
-                <p class="text-sm text-gray-600 mb-2">
-                  • USB cable and breadboard
-                </p>
-                <p class="text-sm text-gray-600">
-                  • Basic electronic components
-                </p>
+              <div class="flex items-start">
+                <div
+                  class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0"
+                >
+                  <svg
+                    class="w-4 h-4 text-green-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2.5"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                </div>
+                <span class="text-gray-700 text-base"
+                  >Ownership and borrowing rules</span
+                >
               </div>
 
-              <button
-                class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition mt-6 btn-hover"
-              >
-                Enroll Now
-              </button>
+              <div class="flex items-start">
+                <div
+                  class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0"
+                >
+                  <svg
+                    class="w-4 h-4 text-green-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2.5"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                </div>
+                <span class="text-gray-700 text-base"
+                  >References and lifetimes</span
+                >
+              </div>
+
+              <div class="flex items-start">
+                <div
+                  class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0"
+                >
+                  <svg
+                    class="w-4 h-4 text-green-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2.5"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                </div>
+                <span class="text-gray-700 text-base"
+                  >String and String slice</span
+                >
+              </div>
+
+              <div class="flex items-start">
+                <div
+                  class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0"
+                >
+                  <svg
+                    class="w-4 h-4 text-green-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2.5"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                </div>
+                <span class="text-gray-700 text-base"
+                  >Cargo package manager</span
+                >
+              </div>
+
+              <div class="flex items-start">
+                <div
+                  class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0"
+                >
+                  <svg
+                    class="w-4 h-4 text-green-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2.5"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                </div>
+                <span class="text-gray-700 text-base"
+                  >Structures and Enums</span
+                >
+              </div>
+
+              <div class="flex items-start">
+                <div
+                  class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0"
+                >
+                  <svg
+                    class="w-4 h-4 text-green-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2.5"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                </div>
+                <span class="text-gray-700 text-base"
+                  >Unit testing in Rust</span
+                >
+              </div>
+
+              <div class="flex items-start">
+                <div
+                  class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0"
+                >
+                  <svg
+                    class="w-4 h-4 text-green-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2.5"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                </div>
+                <span class="text-gray-700 text-base"
+                  >Error handling patterns</span
+                >
+              </div>
+
+              <div class="flex items-start">
+                <div
+                  class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0"
+                >
+                  <svg
+                    class="w-4 h-4 text-green-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2.5"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                </div>
+                <span class="text-gray-700 text-base">Pattern matching</span>
+              </div>
+
+              <div class="flex items-start">
+                <div
+                  class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0"
+                >
+                  <svg
+                    class="w-4 h-4 text-green-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2.5"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                </div>
+                <span class="text-gray-700 text-base"
+                  >Control flow and loops</span
+                >
+              </div>
+
+              <div class="flex items-start md:col-span-2">
+                <div
+                  class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0"
+                >
+                  <svg
+                    class="w-4 h-4 text-green-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2.5"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                </div>
+                <span class="text-gray-700 text-base"
+                  >Advanced topics: Generics, traits, trait objects, smart
+                  pointers, closures, iterators and more</span
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -1118,178 +901,5 @@
         </div>
       </div>
     </section>
-
-    <!-- CTA Section -->
-    <section class="gradient-purple py-20">
-      <div class="max-w-5xl mx-auto px-6 text-center text-white">
-        <h2 class="text-4xl md:text-5xl font-bold mb-6">
-          Ready to Start Your Embedded Systems Journey?
-        </h2>
-        <p class="text-xl text-blue-100 mb-12">
-          Join 1,250+ students who are already mastering embedded systems
-          programming
-        </p>
-
-        <div
-          class="bg-white bg-opacity-20 backdrop-blur-lg rounded-2xl p-8 mb-8 max-w-2xl mx-auto"
-        >
-          <div class="text-center mb-6">
-            <div class="text-6xl font-bold mb-2">₹559</div>
-            <div class="text-blue-100 line-through text-xl mb-2">₹2,989</div>
-            <div class="badge bg-red-500 text-white">Limited Time Offer</div>
-          </div>
-
-          <button
-            class="w-full bg-yellow-400 text-gray-900 py-4 rounded-xl font-bold text-lg hover:bg-yellow-300 transition btn-hover mb-4"
-          >
-            Enroll Now
-          </button>
-          <div class="text-sm text-blue-100">
-            30-day money-back guarantee • Lifetime access • Free updates
-          </div>
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-8 text-center">
-          <div>
-            <div class="text-4xl font-bold mb-2">3K+</div>
-            <div class="text-blue-100">Active Students</div>
-          </div>
-          <div>
-            <div class="text-4xl font-bold mb-2">4.6/5</div>
-            <div class="text-blue-100">Average Rating</div>
-          </div>
-          <div>
-            <div class="text-4xl font-bold mb-2">25+ hrs</div>
-            <div class="text-blue-100">Video Content</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-300 py-12">
-      <div class="max-w-7xl mx-auto px-6">
-        <div class="grid md:grid-cols-4 gap-8 mb-8">
-          <div>
-            <div class="flex items-center space-x-2 mb-4">
-              <div
-                class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center"
-              >
-                <span class="text-white font-bold text-lg">EP</span>
-              </div>
-              <span class="text-xl font-bold text-white">EmbeddedPro</span>
-            </div>
-            <p class="text-sm mb-4">
-              Leading provider of embedded systems training with over 10 years
-              of experience.
-            </p>
-            <div class="flex space-x-4">
-              <a href="#" class="hover:text-blue-400 transition">
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path
-                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
-                  />
-                </svg>
-              </a>
-              <a href="#" class="hover:text-blue-400 transition">
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path
-                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
-                  />
-                </svg>
-              </a>
-              <a href="#" class="hover:text-blue-400 transition">
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path
-                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-
-          <div>
-            <h3 class="text-white font-bold mb-4">Courses</h3>
-            <ul class="space-y-2 text-sm">
-              <li>
-                <a href="#" class="hover:text-blue-400 transition"
-                  >All Courses</a
-                >
-              </li>
-              <li>
-                <a href="#" class="hover:text-blue-400 transition"
-                  >Beginner Courses</a
-                >
-              </li>
-              <li>
-                <a href="#" class="hover:text-blue-400 transition"
-                  >Advanced Courses</a
-                >
-              </li>
-              <li>
-                <a href="#" class="hover:text-blue-400 transition"
-                  >Free Resources</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 class="text-white font-bold mb-4">Support</h3>
-            <ul class="space-y-2 text-sm">
-              <li>
-                <a href="#" class="hover:text-blue-400 transition"
-                  >Help Center</a
-                >
-              </li>
-              <li>
-                <a href="#" class="hover:text-blue-400 transition">Community</a>
-              </li>
-              <li>
-                <a href="#" class="hover:text-blue-400 transition"
-                  >Contact Us</a
-                >
-              </li>
-              <li>
-                <a href="#" class="hover:text-blue-400 transition">FAQ</a>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 class="text-white font-bold mb-4">Company</h3>
-            <ul class="space-y-2 text-sm">
-              <li>
-                <a href="#" class="hover:text-blue-400 transition">About Us</a>
-              </li>
-              <li>
-                <a href="#" class="hover:text-blue-400 transition">Careers</a>
-              </li>
-              <li>
-                <a href="#" class="hover:text-blue-400 transition">Blog</a>
-              </li>
-              <li>
-                <a href="#" class="hover:text-blue-400 transition">Press</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div
-          class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm"
-        >
-          <p>© 2024 EmbeddedPro. All rights reserved.</p>
-          <div class="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" class="hover:text-blue-400 transition"
-              >Privacy Policy</a
-            >
-            <a href="#" class="hover:text-blue-400 transition"
-              >Terms of Service</a
-            >
-            <a href="#" class="hover:text-blue-400 transition">Cookie Policy</a>
-          </div>
-        </div>
-      </div>
-    </footer>
   </body>
 </html>
