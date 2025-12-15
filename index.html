@@ -124,16 +124,23 @@
         font-size: 0.875rem;
         font-weight: 500;
       }
+
+      @media (max-width: 640px) {
+        .hero-title {
+          font-size: 1.875rem;
+          line-height: 1.2;
+        }
+      }
     </style>
   </head>
   <body class="bg-gray-50">
     <!-- Hero Section -->
-    <section class="hero-section py-16">
-      <div class="max-w-7xl mx-auto px-6">
+    <section class="hero-section py-8 sm:py-12 md:py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <!-- Back to Courses Button -->
         <a
           href="#"
-          class="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition mb-8 font-medium btn-hover"
+          class="inline-flex items-center bg-blue-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg hover:bg-blue-700 transition mb-6 sm:mb-8 font-medium btn-hover text-sm sm:text-base"
         >
           <svg
             class="w-4 h-4 mr-2"
@@ -150,27 +157,30 @@
           </svg>
           Back to Courses
         </a>
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-          <div class="text-white">
-            <span class="badge bg-blue-600 text-white mb-4"
+        <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-start">
+          <div class="text-white order-2 md:order-1">
+            <span
+              class="badge bg-blue-600 text-white mb-3 sm:mb-4 text-xs sm:text-sm"
               >Beginner Level</span
             >
             <h1
-              class="text-4xl md:text-5xl font-bold leading-tight mb-4 animate-fadeInUp"
+              class="hero-title text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-3 sm:mb-4 animate-fadeInUp"
             >
               Master The Rust Programming Language : Beginner To Advanced
             </h1>
-            <p class="text-blue-100 text-lg mb-6 animate-fadeInUp delay-100">
+            <p
+              class="text-blue-100 text-sm sm:text-base md:text-lg mb-4 sm:mb-6 animate-fadeInUp delay-100"
+            >
               Learn Rust(Latest Edition) programming step by step with hands-on
               exercises, from basics to advanced levels.
             </p>
 
             <div
-              class="flex items-center space-x-6 mb-8 animate-fadeInUp delay-200"
+              class="flex flex-col sm:flex-row sm:items-center sm:space-x-6 space-y-3 sm:space-y-0 mb-6 sm:mb-8 animate-fadeInUp delay-200"
             >
               <div class="flex items-center">
                 <svg
-                  class="w-5 h-5 text-blue-300 mr-2"
+                  class="w-4 h-4 sm:w-5 sm:h-5 text-blue-300 mr-2"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -182,11 +192,13 @@
                     d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
                   ></path>
                 </svg>
-                <span class="text-blue-100">28.5 hours</span>
+                <span class="text-blue-100 text-sm sm:text-base"
+                  >28.5 hours</span
+                >
               </div>
               <div class="flex items-center">
                 <svg
-                  class="w-5 h-5 text-blue-300 mr-2"
+                  class="w-4 h-4 sm:w-5 sm:h-5 text-blue-300 mr-2"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -198,41 +210,51 @@
                     d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
                   ></path>
                 </svg>
-                <span class="text-blue-100">3052 learners</span>
+                <span class="text-blue-100 text-sm sm:text-base"
+                  >3052 learners</span
+                >
               </div>
               <div class="flex items-center">
-                <span class="text-yellow-400 mr-2">★</span>
-                <span class="text-white font-semibold">4.6 rating</span>
-                <span class="text-blue-100 ml-2">(226 reviews)</span>
+                <span class="text-yellow-400 mr-2 text-sm sm:text-base">★</span>
+                <span class="text-white font-semibold text-sm sm:text-base"
+                  >4.6 rating</span
+                >
+                <span class="text-blue-100 ml-2 text-xs sm:text-sm"
+                  >(226 reviews)</span
+                >
               </div>
             </div>
 
             <!-- Pricing Card -->
             <div
-              class="bg-gray-800 bg-opacity-50 backdrop-blur-lg rounded-2xl p-6 animate-scaleIn delay-300"
+              class="bg-gray-800 bg-opacity-50 backdrop-blur-lg rounded-xl sm:rounded-2xl p-4 sm:p-6 animate-scaleIn delay-300"
             >
-              <div class="flex items-baseline mb-4">
-                <span class="text-4xl font-bold text-white">₹559</span>
-                <span class="text-gray-400 line-through ml-3 text-xl"
+              <div class="flex items-baseline mb-3 sm:mb-4">
+                <span class="text-3xl sm:text-4xl font-bold text-white"
+                  >₹559</span
+                >
+                <span class="text-gray-400 line-through ml-3 text-lg sm:text-xl"
                   >₹2,989</span
                 >
               </div>
               <div class="mb-4">
-                <span class="badge bg-red-500 text-white"
+                <span class="badge bg-red-500 text-white text-xs sm:text-sm"
                   >Limited Time Discount</span
                 >
-                <div class="text-green-400 font-semibold mt-2">
+                <div
+                  class="text-green-400 font-semibold mt-2 text-sm sm:text-base"
+                >
                   Save on this course!
                 </div>
               </div>
 
               <button
-                class="w-full bg-blue-600 text-white py-4 rounded-lg font-bold text-lg hover:bg-blue-700 transition btn-hover mb-3"
+                class="w-full bg-blue-600 text-white py-3 sm:py-4 rounded-lg font-bold text-sm sm:text-base md:text-lg hover:bg-blue-700 transition btn-hover mb-3"
               >
                 ⚡ Enroll on Fastbit - ₹559
               </button>
               <button
-                class="w-full bg-pink-600 text-white py-4 rounded-lg font-bold text-lg hover:bg-pink-700 transition btn-hover mb-4"
+                class="w-full bg-pink-600 text-white py-3 sm:py-4 rounded-lg font-bold text-sm sm:text-base md:text-lg hover:bg-pink-700 transition btn-hover"
               >
                 ⭐ Enroll on Udemy - ₹559
               </button>
@@ -240,8 +262,10 @@
           </div>
 
           <!-- Video Preview -->
-          <div class="animate-slideInRight delay-200">
-            <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+          <div class="animate-slideInRight delay-200 order-1 md:order-2">
+            <div
+              class="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl"
+            >
               <img
                 src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&h=500&fit=crop"
                 alt="Course Preview"
@@ -252,10 +276,10 @@
               >
                 <button
                   onclick="document.getElementById('videoModal').classList.remove('hidden')"
-                  class="w-20 h-20 bg-white rounded-full flex items-center justify-center hover:scale-110 transition transform"
+                  class="w-16 h-16 sm:w-20 sm:h-20 bg-white rounded-full flex items-center justify-center hover:scale-110 transition transform"
                 >
                   <svg
-                    class="w-10 h-10 text-blue-600 ml-1"
+                    class="w-8 h-8 sm:w-10 sm:h-10 text-blue-600 ml-1"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
@@ -264,17 +288,19 @@
                 </button>
               </div>
               <div
-                class="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 rounded-full text-sm font-semibold"
+                class="absolute top-2 left-2 sm:top-4 sm:left-4 bg-red-600 text-white px-2 py-1 sm:px-3 sm:py-1 rounded-full text-xs sm:text-sm font-semibold"
               >
                 🔴 LIVE Preview
               </div>
               <div
-                class="absolute bottom-4 right-4 bg-black bg-opacity-70 text-white px-3 py-1 rounded text-sm"
+                class="absolute bottom-2 right-2 sm:bottom-4 sm:right-4 bg-black bg-opacity-70 text-white px-2 py-1 sm:px-3 sm:py-1 rounded text-xs sm:text-sm"
               >
                 5:30 Preview
               </div>
             </div>
-            <p class="text-center text-blue-100 mt-4">
+            <p
+              class="text-center text-blue-100 mt-3 sm:mt-4 text-xs sm:text-sm md:text-base px-4 sm:px-0"
+            >
               Watch this free preview to see our teaching methodology and course
               quality
             </p>
@@ -290,15 +316,15 @@
       onclick="if(event.target === this) { this.classList.add('hidden'); document.getElementById('videoFrame').src = document.getElementById('videoFrame').src; }"
     >
       <div
-        class="relative w-full max-w-5xl bg-gray-900 rounded-2xl shadow-2xl overflow-hidden"
+        class="relative w-full max-w-5xl bg-gray-900 rounded-xl sm:rounded-2xl shadow-2xl overflow-hidden"
       >
         <button
           onclick="document.getElementById('videoModal').classList.add('hidden'); document.getElementById('videoFrame').src = document.getElementById('videoFrame').src"
-          class="absolute top-4 right-4 z-10 bg-white bg-opacity-20 hover:bg-opacity-30 text-white rounded-full w-10 h-10 flex items-center justify-center transition backdrop-blur-sm"
+          class="absolute top-2 right-2 sm:top-4 sm:right-4 z-10 bg-white bg-opacity-20 hover:bg-opacity-30 text-white rounded-full w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center transition backdrop-blur-sm"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
+            class="h-5 w-5 sm:h-6 sm:w-6"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -325,33 +351,39 @@
     </div>
 
     <!-- Course Overview -->
-    <section class="bg-white py-16">
-      <div class="max-w-7xl mx-auto px-6">
+    <section class="bg-white py-12 sm:py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <div class="grid md:grid-cols-3 gap-8">
           <!-- Main Content -->
           <div class="md:col-span-3">
-            <h2 class="text-4xl font-bold text-gray-900 mb-4">
+            <h2
+              class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3 sm:mb-4"
+            >
               Course Overview
             </h2>
-            <div class="w-20 h-1 bg-blue-600 mb-6"></div>
+            <div class="w-16 sm:w-20 h-1 bg-blue-600 mb-4 sm:mb-6"></div>
 
-            <p class="text-gray-600 text-lg leading-relaxed mb-8">
+            <p
+              class="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-6 sm:mb-8"
+            >
               Learn Rust (Latest Edition) programming step by step with hands-on
               exercises, from basics to advanced levels. Master memory safety,
               concurrency, and build high-performance applications.
             </p>
 
-            <h3 class="text-3xl font-bold text-gray-900 mb-6 mt-12">
+            <h3
+              class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-4 sm:mb-6 mt-8 sm:mt-12"
+            >
               What You'll Learn
             </h3>
 
-            <div class="grid md:grid-cols-2 gap-4">
+            <div class="grid sm:grid-cols-2 gap-3 sm:gap-4">
               <div class="flex items-start">
                 <div
-                  class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0"
+                  class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mr-2 sm:mr-3 mt-0.5 flex-shrink-0"
                 >
                   <svg
-                    class="w-4 h-4 text-green-600"
+                    class="w-3 h-3 sm:w-4 sm:h-4 text-green-600"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -364,17 +396,17 @@
                     ></path>
                   </svg>
                 </div>
-                <span class="text-gray-700 text-base"
+                <span class="text-gray-700 text-xs sm:text-sm md:text-base"
                   >Fundamental concepts of Rust programming language</span
                 >
               </div>
 
               <div class="flex items-start">
                 <div
-                  class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0"
+                  class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mr-2 sm:mr-3 mt-0.5 flex-shrink-0"
                 >
                   <svg
-                    class="w-4 h-4 text-green-600"
+                    class="w-3 h-3 sm:w-4 sm:h-4 text-green-600"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -387,17 +419,17 @@
                     ></path>
                   </svg>
                 </div>
-                <span class="text-gray-700 text-base"
+                <span class="text-gray-700 text-xs sm:text-sm md:text-base"
                   >Ownership and borrowing rules</span
                 >
               </div>
 
               <div class="flex items-start">
                 <div
-                  class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0"
+                  class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mr-2 sm:mr-3 mt-0.5 flex-shrink-0"
                 >
                   <svg
-                    class="w-4 h-4 text-green-600"
+                    class="w-3 h-3 sm:w-4 sm:h-4 text-green-600"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -410,17 +442,17 @@
                     ></path>
                   </svg>
                 </div>
-                <span class="text-gray-700 text-base"
+                <span class="text-gray-700 text-xs sm:text-sm md:text-base"
                   >References and lifetimes</span
                 >
               </div>
 
               <div class="flex items-start">
                 <div
-                  class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0"
+                  class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mr-2 sm:mr-3 mt-0.5 flex-shrink-0"
                 >
                   <svg
-                    class="w-4 h-4 text-green-600"
+                    class="w-3 h-3 sm:w-4 sm:h-4 text-green-600"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -433,17 +465,17 @@
                     ></path>
                   </svg>
                 </div>
-                <span class="text-gray-700 text-base"
+                <span class="text-gray-700 text-xs sm:text-sm md:text-base"
                   >String and String slice</span
                 >
               </div>
 
               <div class="flex items-start">
                 <div
-                  class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0"
+                  class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mr-2 sm:mr-3 mt-0.5 flex-shrink-0"
                 >
                   <svg
-                    class="w-4 h-4 text-green-600"
+                    class="w-3 h-3 sm:w-4 sm:h-4 text-green-600"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -456,17 +488,17 @@
                     ></path>
                   </svg>
                 </div>
-                <span class="text-gray-700 text-base"
+                <span class="text-gray-700 text-xs sm:text-sm md:text-base"
                   >Cargo package manager</span
                 >
               </div>
 
               <div class="flex items-start">
                 <div
-                  class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0"
+                  class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mr-2 sm:mr-3 mt-0.5 flex-shrink-0"
                 >
                   <svg
-                    class="w-4 h-4 text-green-600"
+                    class="w-3 h-3 sm:w-4 sm:h-4 text-green-600"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -479,17 +511,17 @@
                     ></path>
                   </svg>
                 </div>
-                <span class="text-gray-700 text-base"
+                <span class="text-gray-700 text-xs sm:text-sm md:text-base"
                   >Structures and Enums</span
                 >
               </div>
 
               <div class="flex items-start">
                 <div
-                  class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0"
+                  class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mr-2 sm:mr-3 mt-0.5 flex-shrink-0"
                 >
                   <svg
-                    class="w-4 h-4 text-green-600"
+                    class="w-3 h-3 sm:w-4 sm:h-4 text-green-600"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -502,17 +534,17 @@
                     ></path>
                   </svg>
                 </div>
-                <span class="text-gray-700 text-base"
+                <span class="text-gray-700 text-xs sm:text-sm md:text-base"
                   >Unit testing in Rust</span
                 >
               </div>
 
               <div class="flex items-start">
                 <div
-                  class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0"
+                  class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mr-2 sm:mr-3 mt-0.5 flex-shrink-0"
                 >
                   <svg
-                    class="w-4 h-4 text-green-600"
+                    class="w-3 h-3 sm:w-4 sm:h-4 text-green-600"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -525,17 +557,17 @@
                     ></path>
                   </svg>
                 </div>
-                <span class="text-gray-700 text-base"
+                <span class="text-gray-700 text-xs sm:text-sm md:text-base"
                   >Error handling patterns</span
                 >
               </div>
 
               <div class="flex items-start">
                 <div
-                  class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0"
+                  class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mr-2 sm:mr-3 mt-0.5 flex-shrink-0"
                 >
                   <svg
-                    class="w-4 h-4 text-green-600"
+                    class="w-3 h-3 sm:w-4 sm:h-4 text-green-600"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -548,15 +580,17 @@
                     ></path>
                   </svg>
                 </div>
-                <span class="text-gray-700 text-base">Pattern matching</span>
+                <span class="text-gray-700 text-xs sm:text-sm md:text-base"
+                  >Pattern matching</span
+                >
               </div>
 
               <div class="flex items-start">
                 <div
-                  class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0"
+                  class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mr-2 sm:mr-3 mt-0.5 flex-shrink-0"
                 >
                   <svg
-                    class="w-4 h-4 text-green-600"
+                    class="w-3 h-3 sm:w-4 sm:h-4 text-green-600"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -569,17 +603,17 @@
                     ></path>
                   </svg>
                 </div>
-                <span class="text-gray-700 text-base"
+                <span class="text-gray-700 text-xs sm:text-sm md:text-base"
                   >Control flow and loops</span
                 >
               </div>
 
-              <div class="flex items-start md:col-span-2">
+              <div class="flex items-start sm:col-span-2">
                 <div
-                  class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0"
+                  class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mr-2 sm:mr-3 mt-0.5 flex-shrink-0"
                 >
                   <svg
-                    class="w-4 h-4 text-green-600"
+                    class="w-3 h-3 sm:w-4 sm:h-4 text-green-600"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -592,7 +626,7 @@
                     ></path>
                   </svg>
                 </div>
-                <span class="text-gray-700 text-base"
+                <span class="text-gray-700 text-xs sm:text-sm md:text-base"
                   >Advanced topics: Generics, traits, trait objects, smart
                   pointers, closures, iterators and more</span
                 >
@@ -604,34 +638,50 @@
     </section>
 
     <!-- Instructor Section -->
-    <section class="bg-gray-50 py-16">
-      <div class="max-w-7xl mx-auto px-6">
-        <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+    <section class="bg-gray-50 py-12 sm:py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <h2
+          class="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 sm:mb-8 text-center"
+        >
           About Your Instructor
         </h2>
-        <div class="bg-white rounded-2xl shadow-lg p-8 max-w-4xl mx-auto">
-          <div class="flex items-start space-x-6">
+        <div
+          class="bg-white rounded-xl sm:rounded-2xl shadow-lg p-5 sm:p-6 md:p-8 max-w-4xl mx-auto"
+        >
+          <div
+            class="flex flex-col sm:flex-row items-start sm:space-x-6 space-y-4 sm:space-y-0"
+          >
             <div
-              class="w-24 h-24 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white text-3xl font-bold flex-shrink-0"
+              class="w-20 h-20 sm:w-24 sm:h-24 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white text-2xl sm:text-3xl font-bold flex-shrink-0 mx-auto sm:mx-0"
             >
               KN
             </div>
-            <div>
-              <h3 class="text-2xl font-bold text-gray-900 mb-2">Kiran Nayak</h3>
-              <p class="text-blue-600 font-semibold mb-4">
+            <div class="flex-1">
+              <h3
+                class="text-xl sm:text-2xl font-bold text-gray-900 mb-1 sm:mb-2"
+              >
+                Kiran Nayak
+              </h3>
+              <p
+                class="text-blue-600 font-semibold mb-3 sm:mb-4 text-sm sm:text-base"
+              >
                 Senior Embedded Systems Engineer
               </p>
-              <p class="text-gray-700 leading-relaxed mb-4">
+              <p
+                class="text-gray-700 leading-relaxed mb-3 sm:mb-4 text-xs sm:text-sm md:text-base"
+              >
                 With over 15 years of experience in embedded systems
                 development, Kiran has worked on projects ranging from IoT
                 devices to automotive systems. He has trained over 50,000
                 students worldwide and is passionate about making complex
                 embedded concepts accessible to everyone.
               </p>
-              <div class="flex items-center space-x-6 text-sm text-gray-600">
+              <div
+                class="flex flex-col sm:flex-row sm:items-center sm:space-x-6 space-y-2 sm:space-y-0 text-xs sm:text-sm text-gray-600"
+              >
                 <div class="flex items-center">
                   <svg
-                    class="w-5 h-5 mr-2 text-blue-600"
+                    class="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-blue-600"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -647,7 +697,7 @@
                 </div>
                 <div class="flex items-center">
                   <svg
-                    class="w-5 h-5 mr-2 text-blue-600"
+                    class="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-blue-600"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -673,19 +723,31 @@
     </section>
 
     <!-- Student Reviews -->
-    <section class="bg-white py-16">
-      <div class="max-w-7xl mx-auto px-6">
-        <h2 class="text-3xl font-bold text-gray-900 mb-4 text-center">
+    <section class="bg-white py-12 sm:py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <h2
+          class="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4 text-center"
+        >
           Student Reviews
         </h2>
-        <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+        <p
+          class="text-gray-600 text-center mb-8 sm:mb-12 max-w-2xl mx-auto text-sm sm:text-base px-4"
+        >
           See what our students have to say about their learning experience
         </p>
 
-        <div class="grid md:grid-cols-3 gap-8 mb-12">
-          <div class="bg-white rounded-2xl shadow-lg p-6 card-hover">
-            <div class="flex text-yellow-400 mb-4">★★★★★</div>
-            <p class="text-gray-700 mb-6">
+        <div
+          class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-12"
+        >
+          <div
+            class="bg-white rounded-xl sm:rounded-2xl shadow-lg p-5 sm:p-6 card-hover"
+          >
+            <div class="flex text-yellow-400 mb-3 sm:mb-4 text-sm sm:text-base">
+              ★★★★★
+            </div>
+            <p
+              class="text-gray-700 mb-4 sm:mb-6 text-xs sm:text-sm md:text-base leading-relaxed"
+            >
               "Great course and explains concepts really well. This helps quite
               a bit with harder to understand concepts in rust like lifetimes,
               lifetime elision, dynamic dispatch of traits etc. This course
@@ -696,20 +758,28 @@
             </p>
             <div class="flex items-center">
               <div
-                class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold mr-3"
+                class="w-10 h-10 sm:w-12 sm:h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold mr-3 text-sm sm:text-base"
               >
                 BA
               </div>
               <div>
-                <div class="font-bold text-gray-900">Bobby A.</div>
-                <div class="text-sm text-gray-600">Student</div>
+                <div class="font-bold text-gray-900 text-sm sm:text-base">
+                  Bobby A.
+                </div>
+                <div class="text-xs sm:text-sm text-gray-600">Student</div>
               </div>
             </div>
           </div>
 
-          <div class="bg-white rounded-2xl shadow-lg p-6 card-hover">
-            <div class="flex text-yellow-400 mb-4">★★★★★</div>
-            <p class="text-gray-700 mb-6">
+          <div
+            class="bg-white rounded-xl sm:rounded-2xl shadow-lg p-5 sm:p-6 card-hover"
+          >
+            <div class="flex text-yellow-400 mb-3 sm:mb-4 text-sm sm:text-base">
+              ★★★★★
+            </div>
+            <p
+              class="text-gray-700 mb-4 sm:mb-6 text-xs sm:text-sm md:text-base leading-relaxed"
+            >
               "This is an excellent course on Rust fundamentals. The instructor
               goes into details of memory menegment and everything is explained
               at a lower level than most other courses. The instructor is also
@@ -717,44 +787,58 @@
             </p>
             <div class="flex items-center">
               <div
-                class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold mr-3"
+                class="w-10 h-10 sm:w-12 sm:h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold mr-3 text-sm sm:text-base"
               >
                 SG
               </div>
               <div>
-                <div class="font-bold text-gray-900">Suhas G.</div>
-                <div class="text-sm text-gray-600">Student</div>
+                <div class="font-bold text-gray-900 text-sm sm:text-base">
+                  Suhas G.
+                </div>
+                <div class="text-xs sm:text-sm text-gray-600">Student</div>
               </div>
             </div>
           </div>
 
-          <div class="bg-white rounded-2xl shadow-lg p-6 card-hover">
-            <div class="flex text-yellow-400 mb-4">★★★★★</div>
-            <p class="text-gray-700 mb-6">
+          <div
+            class="bg-white rounded-xl sm:rounded-2xl shadow-lg p-5 sm:p-6 card-hover sm:col-span-2 lg:col-span-1"
+          >
+            <div class="flex text-yellow-400 mb-3 sm:mb-4 text-sm sm:text-base">
+              ★★★★★
+            </div>
+            <p
+              class="text-gray-700 mb-4 sm:mb-6 text-xs sm:text-sm md:text-base leading-relaxed"
+            >
               "I usually do not write reviews, but Instructor Kiran is amazing.
               This is my 5th course with him in Embedded Systems, and I have
               learned a lot thank to the FastBit Embedded Team."
             </p>
             <div class="flex items-center">
               <div
-                class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-white font-bold mr-3"
+                class="w-10 h-10 sm:w-12 sm:h-12 bg-green-600 rounded-full flex items-center justify-center text-white font-bold mr-3 text-sm sm:text-base"
               >
                 JC
               </div>
               <div>
-                <div class="font-bold text-gray-900">Christian H.</div>
-                <div class="text-sm text-gray-600">Student</div>
+                <div class="font-bold text-gray-900 text-sm sm:text-base">
+                  Christian H.
+                </div>
+                <div class="text-xs sm:text-sm text-gray-600">Student</div>
               </div>
             </div>
           </div>
         </div>
 
         <div class="text-center">
-          <div class="text-5xl font-bold text-gray-900 mb-2">4.6</div>
-          <div class="flex justify-center text-yellow-400 text-2xl mb-2">
+          <div class="text-4xl sm:text-5xl font-bold text-gray-900 mb-2">
+            4.6
+          </div>
+          <div
+            class="flex justify-center text-yellow-400 text-xl sm:text-2xl mb-2"
+          >
             ★★★★★
           </div>
-          <p class="text-gray-600">
+          <p class="text-gray-600 text-sm sm:text-base">
             Course Rating • 226 reviews from verified students
           </p>
         </div>
@@ -762,23 +846,27 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="bg-gray-50 py-16 mb-24">
-      <div class="max-w-4xl mx-auto px-6">
-        <h2 class="text-3xl font-bold text-gray-900 mb-4 text-center">
+    <section class="bg-gray-50 py-12 sm:py-16 mb-16 sm:mb-24">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6">
+        <h2
+          class="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4 text-center"
+        >
           Frequently Asked Questions
         </h2>
-        <p class="text-gray-600 text-center mb-12">
+        <p class="text-gray-600 text-center mb-8 sm:mb-12 text-sm sm:text-base">
           Got questions? We've got answers
         </p>
 
-        <div class="space-y-4">
+        <div class="space-y-3 sm:space-y-4">
           <details class="bg-white rounded-lg shadow">
             <summary
-              class="cursor-pointer p-6 font-semibold text-gray-900 hover:bg-gray-50 rounded-lg transition"
+              class="cursor-pointer p-4 sm:p-6 font-semibold text-gray-900 hover:bg-gray-50 rounded-lg transition text-sm sm:text-base"
             >
               What if I have no prior experience with embedded systems?
             </summary>
-            <div class="p-6 pt-0 text-gray-700">
+            <div
+              class="p-4 sm:p-6 pt-0 text-gray-700 text-xs sm:text-sm md:text-base"
+            >
               No worries! This course starts from absolute basics. You'll learn
               step by step with hands-on guidance, making it suitable for
               complete beginners.
@@ -787,11 +875,13 @@
 
           <details class="bg-white rounded-lg shadow">
             <summary
-              class="cursor-pointer p-6 font-semibold text-gray-900 hover:bg-gray-50 rounded-lg transition"
+              class="cursor-pointer p-4 sm:p-6 font-semibold text-gray-900 hover:bg-gray-50 rounded-lg transition text-sm sm:text-base"
             >
               Do I need to purchase any hardware for this course?
             </summary>
-            <div class="p-6 pt-0 text-gray-700">
+            <div
+              class="p-4 sm:p-6 pt-0 text-gray-700 text-xs sm:text-sm md:text-base"
+            >
               Hardware is optional in the beginning. You can follow along using
               simulators and provided examples. Hardware recommendations will be
               given when required.
@@ -800,23 +890,27 @@
 
           <details class="bg-white rounded-lg shadow">
             <summary
-              class="cursor-pointer p-6 font-semibold text-gray-900 hover:bg-gray-50 rounded-lg transition"
+              class="cursor-pointer p-4 sm:p-6 font-semibold text-gray-900 hover:bg-gray-50 rounded-lg transition text-sm sm:text-base"
             >
               How long do I have access to the course materials?
             </summary>
-            <div class="p-6 pt-0 text-gray-700">
-              You’ll have lifetime access, including free future updates, so you
+            <div
+              class="p-4 sm:p-6 pt-0 text-gray-700 text-xs sm:text-sm md:text-base"
+            >
+              You'll have lifetime access, including free future updates, so you
               can learn at your own pace.
             </div>
           </details>
 
           <details class="bg-white rounded-lg shadow">
             <summary
-              class="cursor-pointer p-6 font-semibold text-gray-900 hover:bg-gray-50 rounded-lg transition"
+              class="cursor-pointer p-4 sm:p-6 font-semibold text-gray-900 hover:bg-gray-50 rounded-lg transition text-sm sm:text-base"
             >
               Is there any job placement assistance?
             </summary>
-            <div class="p-6 pt-0 text-gray-700">
+            <div
+              class="p-4 sm:p-6 pt-0 text-gray-700 text-xs sm:text-sm md:text-base"
+            >
               Yes, we provide resume guidance, project portfolio review,
               interview preparation, and referrals when available.
             </div>
@@ -824,11 +918,13 @@
 
           <details class="bg-white rounded-lg shadow">
             <summary
-              class="cursor-pointer p-6 font-semibold text-gray-900 hover:bg-gray-50 rounded-lg transition"
+              class="cursor-pointer p-4 sm:p-6 font-semibold text-gray-900 hover:bg-gray-50 rounded-lg transition text-sm sm:text-base"
             >
               What programming languages will I learn?
             </summary>
-            <div class="p-6 pt-0 text-gray-700">
+            <div
+              class="p-4 sm:p-6 pt-0 text-gray-700 text-xs sm:text-sm md:text-base"
+            >
               You'll primarily work with <strong>C/C++</strong> for embedded
               programming, and we also cover <strong>Python</strong> for IoT
               applications and <strong>basic assembly</strong> for low-level
@@ -838,23 +934,27 @@
 
           <details class="bg-white rounded-lg shadow">
             <summary
-              class="cursor-pointer p-6 font-semibold text-gray-900 hover:bg-gray-50 rounded-lg transition"
+              class="cursor-pointer p-4 sm:p-6 font-semibold text-gray-900 hover:bg-gray-50 rounded-lg transition text-sm sm:text-base"
             >
               Can I get a refund if I'm not satisfied?
             </summary>
-            <div class="p-6 pt-0 text-gray-700">
-              Yes — we offer a 30-day money-back guarantee. If the course isn’t
+            <div
+              class="p-4 sm:p-6 pt-0 text-gray-700 text-xs sm:text-sm md:text-base"
+            >
+              Yes — we offer a 30-day money-back guarantee. If the course isn't
               right for you, request a refund with no questions asked.
             </div>
           </details>
 
           <details class="bg-white rounded-lg shadow">
             <summary
-              class="cursor-pointer p-6 font-semibold text-gray-900 hover:bg-gray-50 rounded-lg transition"
+              class="cursor-pointer p-4 sm:p-6 font-semibold text-gray-900 hover:bg-gray-50 rounded-lg transition text-sm sm:text-base"
             >
               How is this course different from free online resources?
             </summary>
-            <div class="p-6 pt-0 text-gray-700">
+            <div
+              class="p-4 sm:p-6 pt-0 text-gray-700 text-xs sm:text-sm md:text-base"
+            >
               This is a structured, mentor-guided, project-based course designed
               for real-world application, unlike scattered tutorials. You
               receive support, clarity, and a professional learning path.
@@ -863,11 +963,13 @@
 
           <details class="bg-white rounded-lg shadow">
             <summary
-              class="cursor-pointer p-6 font-semibold text-gray-900 hover:bg-gray-50 rounded-lg transition"
+              class="cursor-pointer p-4 sm:p-6 font-semibold text-gray-900 hover:bg-gray-50 rounded-lg transition text-sm sm:text-base"
             >
               What kind of projects will I build?
             </summary>
-            <div class="p-6 pt-0 text-gray-700">
+            <div
+              class="p-4 sm:p-6 pt-0 text-gray-700 text-xs sm:text-sm md:text-base"
+            >
               You'll build practical embedded projects such as sensor-based
               systems, communication protocols, real-time applications, and
               complete IoT prototypes.
@@ -876,11 +978,13 @@
 
           <details class="bg-white rounded-lg shadow">
             <summary
-              class="cursor-pointer p-6 font-semibold text-gray-900 hover:bg-gray-50 rounded-lg transition"
+              class="cursor-pointer p-4 sm:p-6 font-semibold text-gray-900 hover:bg-gray-50 rounded-lg transition text-sm sm:text-base"
             >
               Is the certificate recognized by employers?
             </summary>
-            <div class="p-6 pt-0 text-gray-700">
+            <div
+              class="p-4 sm:p-6 pt-0 text-gray-700 text-xs sm:text-sm md:text-base"
+            >
               Yes, our certificate is industry-recognized and helps strengthen
               your resume and LinkedIn profile.
             </div>
@@ -888,12 +992,14 @@
 
           <details class="bg-white rounded-lg shadow">
             <summary
-              class="cursor-pointer p-6 font-semibold text-gray-900 hover:bg-gray-50 rounded-lg transition"
+              class="cursor-pointer p-4 sm:p-6 font-semibold text-gray-900 hover:bg-gray-50 rounded-lg transition text-sm sm:text-base"
             >
               What support is available during the course?
             </summary>
-            <div class="p-6 pt-0 text-gray-700">
-              You’ll have access to mentor support, community discussion groups,
+            <div
+              class="p-4 sm:p-6 pt-0 text-gray-700 text-xs sm:text-sm md:text-base"
+            >
+              You'll have access to mentor support, community discussion groups,
               doubt-clearing sessions, and 24/7 Q&A help through our learning
               platform.
             </div>
